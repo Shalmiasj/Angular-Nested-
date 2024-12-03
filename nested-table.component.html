@@ -1,0 +1,17 @@
+<table border="1">
+  <tr>
+    <th>Parent</th>
+    <th>Children</th>
+  </tr>
+  <tr *ngFor="let parent of data">
+    <td>{{ parent.name }}</td>
+    <td>
+      <table border="1">
+        <tr *ngFor="let child of parent.children">
+          <td>{{ child.name }}</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+Style the Table: Optionally, you can 
